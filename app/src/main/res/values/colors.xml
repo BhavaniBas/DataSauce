@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f74573</color>
+    <color name="colorPrimaryDark">#f74573</color>
+    <color name="colorAccent">#f74573</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimaryText">#34495e</color>
+    <color name="colorSecondaryText">#888888</color>
+    <color name="settings_bkg">#EEE</color>
+</resources>

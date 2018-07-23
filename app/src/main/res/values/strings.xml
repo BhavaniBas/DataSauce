@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Datearound_kotlin_new</string>
+
+    <!--Toolbar Title-->
+    <string name="settings">Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="wallet">Wallet</string>
+    <string name="likes">Likes</string>
+    <string name="invite">Invite</string>
+    <string name="get_pro">Get Pro</string>
+    <string name="card">Card</string>
+    <string name="map">Map</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="choose_interests">Choose Interests</string>
+    <string name="send_money">Send Money</string>
+
+    <!--Setting Screen-->
+    <string name="premium">Premium</string>
+    <string name="unlock_our_most_exclusive_features">Unlock our most exclusive features</string>
+    <string name="general">GENERAL</string>
+    <string name="view_profile">View Profile</string>
+    <string name="user_name">username</string>
+    <string name="save">SAVE</string>
+    <string name="notification">Notification</string>
+    <string name="new_matches">New Matches</string>
+    <string name="message">Messages</string>
+    <string name="discovery_settings">DISCOVERY SETTINGS</string>
+    <string name="location">Location</string>
+    <string name="search_distance">Search Distance</string>
+    <string name="age_range">Age Range</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="show_me">SHOW ME</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="app_settings">APP SETTINGS</string>
+    <string name="dnd">DND</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share">Share</string>
+    <string name="help">Help</string>
+    <string name="change_language">Change Language</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+
+    <!--Edit Profile Screen-->
+    <string name="bio_video">Bio Video</string>
+    <string name="upload_bio_video">Upload Bio Video</string>
+    <string name="about">About</string>
+    <string name="write_a_description">Write a Description</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="current_work">Current Work</string>
+    <string name="creative_associate">Creative Associate</string>
+    <string name="choose_your_interests">Choose Your Interests</string>
+    <string name="control_your_profile">Control Your Profile</string>
+    <string name="dont_show_my_age">Don\'t Show My Age</string>
+    <string name="make_my_distance_invisible">Make My Distance Invisible</string>
+
+    <!--Wallet Screen-->
+    <string name="total_distance">Total Distance</string>
+    <string name="share_money">Share Money</string>
+    <string name="add_money">Add Money</string>
+    <string name="all">All</string>
+    <string name="paid">Paid</string>
+    <string name="received">Received</string>
+    <string name="added">Added</string>
+
+    <!--Likes Screen-->
+    <string name="who_likes_me">Who Likes Me</string>
+
+    <!--Invite Screen-->
+    <string name="invite_friends">Invite friends</string>
+    <string name="friends_install_application">You each will get $51 when your friends installs the application</string>
+    <string name="invite_code">INVITE CODE</string>
+
+    <!--Get Pro Screen-->
+    <string name="choose_your_plan">Choose Your Plan</string>
+
+    <!--Chnage Language Screen-->
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+
+    <!--Log out & Delete Account Screen-->
+    <string name="logout_dialog">Are you sure you want to log out?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="delete_account_dialog">Are you sure you want to delete account?</string>
+
+    <!--Front Screen-->
+    <string name="skip">Skip</string>
+
+    <!--Sign In Screen-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_account">Don\'t Have an Account?</string>
+
+    <!--Sign Up Screen-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="dob">Dob</string>
+    <string name="referral_code">Referral code</string>
+    <string name="have_an_account">Have an Account?</string>
+
+    <!--Forgot Password Screen-->
+    <string name="enter_email_to_recover_password">Enter Email To Recover Password</string>
+    <string name="next">Next</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+
+    <!--Choose Interestes Screen-->
+    <string name="done">Done</string>
+
+    <!--Send Money Screen-->
+    <string name="available_balance">Available Balance:</string>
+    <string name="select_member">Select Member</string>
+</resources>
