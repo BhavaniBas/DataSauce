@@ -94,4 +94,10 @@ dependencies {
 
     // Dimension sdp - a scalable size unit
     implementation "com.intuit.sdp:sdp-android:$rootProject.dimensionVersion"
+
+    // Custom SeekBar
+    implementation "org.adw.library:discrete-seekbar:$rootProject.seekBarVersion"
+
+    // Range Seekbar
+    implementation "com.appyvet:materialrangebar:$rootProject.rangeSeekBarVersion"
 }

@@ -17,11 +17,13 @@
 
     <!--Setting Screen-->
     <string name="premium">Premium</string>
+    <string name="my_current_location">My Current Location</string>
     <string name="unlock_our_most_exclusive_features">Unlock our most exclusive features</string>
     <string name="general">GENERAL</string>
     <string name="view_profile">View Profile</string>
-    <string name="user_name">username</string>
+    <string name="user_name">Username</string>
     <string name="save">SAVE</string>
+    <string name="notifications">Notifications</string>
     <string name="notification">Notification</string>
     <string name="new_matches">New Matches</string>
     <string name="message">Messages</string>
@@ -42,6 +44,8 @@
     <string name="change_language">Change Language</string>
     <string name="logout">Logout</string>
     <string name="delete_account">Delete Account</string>
+    <string name="app_name_setting">Date Around</string>
+    <string name="app_version">App Version</string>
 
     <!--Edit Profile Screen-->
     <string name="bio_video">Bio Video</string>
@@ -85,7 +89,7 @@
     <!--Log out & Delete Account Screen-->
     <string name="logout_dialog">Are you sure you want to log out?</string>
     <string name="cancel">Cancel</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="delete_account_dialog">Are you sure you want to delete account?</string>
 
     <!--Front Screen-->
