@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_total_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="@string/total_balance"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/tv_total_bal_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="$ 10.00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_total_balance"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_balance"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_balance"
+        tools:ignore="HardcodedText" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_wallet_bal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_total_bal_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_bal_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_bal_amount">
+
+        <TextView
+            android:id="@+id/tv_share_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableStart="@drawable/share_money"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/share_money"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/view_wallet"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEE"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_add_money"
+            app:layout_constraintStart_toEndOf="@+id/tv_share_money"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_money"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_add_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableStart="@drawable/add_money_to_wallet"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/add_money"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_share_money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/view_wallet"
+            app:layout_constraintTop_toTopOf="@+id/tv_share_money" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/wallet_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_wallet_bal"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+    <FrameLayout
+        android:id="@+id/wallet_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_tabs"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/wallet_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

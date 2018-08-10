@@ -16,13 +16,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/iv_select_language"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/border_bottom"
         android:fontFamily="@font/opensans_regular"
-        android:padding="@dimen/_5sdp"
+        android:padding="@dimen/_7sdp"
         android:text="@string/select_language"
         android:textColor="@color/colorSecondaryText"
         android:textSize="@dimen/_14sdp"
@@ -30,5 +30,27 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <RadioButton
+        android:id="@+id/english_radio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:checked="true"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="@dimen/_5sdp"
+        android:paddingStart="10dp"
+        android:text="@string/english"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_select_language"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_select_language"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlSymmetry" />
 
 </android.support.constraint.ConstraintLayout>

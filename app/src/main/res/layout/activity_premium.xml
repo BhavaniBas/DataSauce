@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/premium_bkg">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        attrs:layout_constraintBottom_toBottomOf="parent"
+        attrs:layout_constraintEnd_toEndOf="parent"
+        attrs:layout_constraintStart_toStartOf="parent"
+        attrs:layout_constraintTop_toBottomOf="@+id/include">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            attrs:layout_constraintBottom_toBottomOf="parent"
+            attrs:layout_constraintEnd_toEndOf="parent"
+            attrs:layout_constraintStart_toStartOf="parent"
+            attrs:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/get_pro_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/pager_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    attrs:layout_constraintEnd_toEndOf="parent"
+                    attrs:layout_constraintStart_toStartOf="parent"
+                    attrs:layout_constraintTop_toTopOf="parent">
+
+                    <com.kotlin.datearound.indicator.PageIndicatorView
+                        android:id="@+id/pageIndicatorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="@dimen/_5sdp"
+                        attrs:layout_constraintEnd_toEndOf="parent"
+                        attrs:layout_constraintStart_toStartOf="parent"
+                        attrs:layout_constraintTop_toTopOf="parent"
+                        attrs:piv_animationDuration="20"
+                        attrs:piv_animationType="thinWorm"
+                        attrs:piv_autoVisibility="true"
+                        attrs:piv_dynamicCount="true"
+                        attrs:piv_interactiveAnimation="true"
+                        attrs:piv_orientation="horizontal"
+                        attrs:piv_padding="12dp"
+                        attrs:piv_radius="8dp"
+                        attrs:piv_rtl_mode="auto"
+                        attrs:piv_selectedColor="@color/colorPrimary"
+                        attrs:piv_strokeWidth="@dimen/_10sdp"
+                        attrs:piv_unselectedColor="@color/colorSecondaryText" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp"
+                        android:fitsSystemWindows="true"
+                        attrs:layout_constraintBottom_toBottomOf="parent"
+                        attrs:layout_constraintEnd_toEndOf="parent"
+                        attrs:layout_constraintStart_toStartOf="parent"
+                        attrs:layout_constraintTop_toBottomOf="@+id/pageIndicatorView"
+                        attrs:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_choose_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/choose_your_plan"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/_12sdp"
+                    attrs:layout_constraintEnd_toEndOf="parent"
+                    attrs:layout_constraintStart_toStartOf="parent"
+                    attrs:layout_constraintTop_toBottomOf="@+id/pager_layout" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_choose_plan" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/month_rate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/rv_premium"
+                    app:layout_constraintStart_toStartOf="@+id/rv_premium"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_premium">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/premium_rate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_premium_month_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/year_rate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/month_rate_layout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/month_rate_layout">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="@dimen/_5sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/premium_rate"/>
+
+                    <TextView
+                        android:id="@+id/tv_premium_year_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView8"
+                        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+                </android.support.constraint.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btn_get_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_btn"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/get_pro"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/year_rate_layout"
+                    app:layout_constraintVertical_bias="1.0" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

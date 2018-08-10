@@ -19,7 +19,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include">
@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
+            android:overScrollMode="never"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -184,6 +185,7 @@
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:background="@drawable/toolbar_background"
+                    android:fontFamily="@font/opensans_regular"
                     android:gravity="center"
                     android:text="@string/save"
                     android:textAllCaps="false"
@@ -191,7 +193,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/ed_user"
                     app:layout_constraintEnd_toEndOf="@+id/tv_user_name"
                     app:layout_constraintTop_toBottomOf="@+id/tv_user_name"
-                    app:layout_constraintVertical_bias="1.0" />
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout2"
@@ -309,6 +311,7 @@
                     android:id="@+id/tv_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/opensans_regular"
                     android:padding="@dimen/_2sdp"
@@ -466,11 +469,14 @@
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="@dimen/_10sdp"
                     app:layout_constraintBottom_toBottomOf="@+id/seekbar_age_range"
-                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintEnd_toStartOf="@+id/seekbar_age_range"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintHorizontal_weight="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/seekbar_age_range" />
 
-                <com.appyvet.rangebar.RangeBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                <com.appyvet.rangebar.RangeBar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/seekbar_age_range"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -478,7 +484,7 @@
                     app:connectingLineWeight="@dimen/_2sdp"
                     app:layout_constraintEnd_toStartOf="@+id/tv_max"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintHorizontal_weight="2"
                     app:layout_constraintStart_toEndOf="@+id/tv_min"
                     app:layout_constraintTop_toBottomOf="@+id/tv_range_limit"
                     app:pinColor="@color/colorPrimary"
@@ -502,7 +508,8 @@
                     android:textSize="@dimen/_10sdp"
                     app:layout_constraintBottom_toBottomOf="@+id/seekbar_age_range"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintHorizontal_weight="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/seekbar_age_range"
                     app:layout_constraintTop_toTopOf="@+id/seekbar_age_range" />
 
                 <android.support.constraint.ConstraintLayout

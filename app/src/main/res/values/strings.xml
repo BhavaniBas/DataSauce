@@ -24,6 +24,7 @@
     <string name="user_name">Username</string>
     <string name="save">SAVE</string>
     <string name="notifications">Notifications</string>
+    <string name="no_notification_found">No Notification Found</string>
     <string name="notification">Notification</string>
     <string name="new_matches">New Matches</string>
     <string name="message">Messages</string>
@@ -63,20 +64,24 @@
     <string name="make_my_distance_invisible">Make My Distance Invisible</string>
 
     <!--Wallet Screen-->
-    <string name="total_distance">Total Distance</string>
+    <string name="total_balance">Total Balance</string>
     <string name="share_money">Share Money</string>
     <string name="add_money">Add Money</string>
     <string name="all">All</string>
     <string name="paid">Paid</string>
     <string name="received">Received</string>
     <string name="added">Added</string>
+    <string name="select_card">Select Card</string>
+    <string name="add_card">Add Card</string>
+    <string name="no_cards_found">No Cards Found</string>
 
     <!--Likes Screen-->
     <string name="who_likes_me">Who Likes Me</string>
+    <string name="no_likes_found">No Likes Found</string>
 
     <!--Invite Screen-->
     <string name="invite_friends">Invite friends</string>
-    <string name="friends_install_application">You each will get $51 when your friends installs the application</string>
+    <string name="friends_install_application">You each will get $51 when your friends \n installs the application</string>
     <string name="invite_code">INVITE CODE</string>
 
     <!--Get Pro Screen-->
@@ -123,4 +128,14 @@
     <!--Send Money Screen-->
     <string name="available_balance">Available Balance:</string>
     <string name="select_member">Select Member</string>
+
+    <!--Premium Features-->
+    <string name="thank_you_for_getting">Thank you for getting</string>
+    <string name="pro">Pro</string>
+    <string name="features">FEATURES</string>
+    <string name="say_goodbye_to_ads">Say Goodbye To Ads.</string>
+    <string name="super_like_per_day">You can do 5 super likes per day.</string>
+    <string name="like_per_day">You can do N number of likes per day.</string>
+    <string name="near_by_user">Your profile will be displayed first to the nearby user.</string>
+    <string name="package_end">Your Premium Package will be ended by</string>
 </resources>

@@ -8,4 +8,6 @@
     <color name="colorPrimaryText">#34495e</color>
     <color name="colorSecondaryText">#888888</color>
     <color name="settings_bkg">#EEE</color>
+    <color name="send_money_bkg">#F7F7F7</color>
+    <color name="premium_bkg">#fafbfb</color>
 </resources>

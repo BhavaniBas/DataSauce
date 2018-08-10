@@ -100,4 +100,13 @@ dependencies {
 
     // Range Seekbar
     implementation "com.appyvet:materialrangebar:$rootProject.rangeSeekBarVersion"
+
+    // Upload Video player
+    compile "cn.jzvd:jiaozivideoplayer:$rootProject.uploadVideo"
+
+    // Circle Image
+    implementation "de.hdodenhof:circleimageview:$rootProject.circleImage"
+
+    // Wallet Add Card
+    implementation "com.braintreepayments:card-form:$rootProject.addCard"
 }
